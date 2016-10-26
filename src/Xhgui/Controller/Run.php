@@ -31,11 +31,11 @@ class Xhgui_Controller_Run extends Xhgui_Controller
             'projection' => true,
         ));
 
-        $title = 'Recent runs';
+        $title = '最近运行';
         $titleMap = array(
-            'wt' => 'Longest wall time',
-            'cpu' => 'Most CPU time',
-            'mu' => 'Highest memory use',
+            'wt' => '按执行时间排序',
+            'cpu' => '按CPU时间排序',
+            'mu' => '按内存占用排序',
         );
         if (isset($titleMap[$sort])) {
             $title = $titleMap[$sort];
